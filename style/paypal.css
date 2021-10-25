@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+.card-row {
+    text-align: center;
+    margin: 20px 25px 10px;
+  }
+  
+  .card-row span {
+    width: 48px;
+    height: 30px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+  }
+ 
+
+.payment{
+    background: #f8f8f8;
+    max-width: 360px;
+    margin: 80px auto;
+    height: auto;
+    padding: 35px;
+    padding-top: 35px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .payment h2{
+      margin: 0;
+      padding: 20px;
+      letter-spacing: 1.5px;
+      text-align: center;
+      background: #EEF2F4;
+      color: #0d3c61;
+      font-size: 24px;
+      font-weight: 300;
+      border-bottom: 1px solid #DEDEDE;
+      font-weight: bold;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  }
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: #F09819;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn2{
+    margin-top: 15px;
+    background: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 12px;
+    text-align: center;
+    color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+
+
+}
+/*--------------------------------------------------------------
+
+*-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+.nav-primary{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+
+/*------------------------*/
+/* Navbar*/
+.entity {
+    width: 8rem;
+    margin: 0 1.5rem;
+    color: #fff;
+    fill: currentcolor;
+    cursor: pointer;
+  }
+
+.nav-secondary{
+     width: 100%;
+}
+.logotipo {
+	
+    padding: 15;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    list-style: none;
+    
+
+}
+.logotipo .lista-P{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: .0rem;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+.logotipo .lista-p{
+    font: 12px/1.6 Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    display: inline-block;
+    padding: 15px 50px;
+}
+
+.lista-p a{
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eee;
+}
+
+.menu .lista{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .035rem;
+    font-weight: 600;
+}
+
+.lista-r{
+    float: right;
+}
+
+.lista a{
+    text-decoration: none;
+    color: hsla(0,0%,0%,.7);
+    display: block;
+    padding: 15px 50px;
+   
+}
+.lista a:hover{
+    background-color: #d01345;
+    color: #fff;
+}
+
+
+

@@ -1,0 +1,173 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+.nav-primary{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+
+/*------------------------*/
+/* Navbar*/
+.entity {
+    width: 8rem;
+    margin: 0 1.5rem;
+    color: #fff;
+    fill: currentcolor;
+    cursor: pointer;
+  }
+
+.nav-secondary{
+     width: 100%;
+}
+.logotipo {
+	
+    padding: 15;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #2d2d2d;
+    list-style: none;
+    
+
+}
+.logotipo .lista-P{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: .0rem;
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+.logotipo .lista-p{
+    font: 12px/1.6 Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    display: inline-block;
+    padding: 15px 50px;
+}
+
+.lista-p a{
+    text-decoration: none;
+    color: white;
+    display: block;
+
+}
+
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eee;
+}
+
+.menu .lista{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .035rem;
+    font-weight: 600;
+}
+
+.lista-r{
+    float: right;
+}
+
+.lista a{
+    text-decoration: none;
+    color: hsla(0,0%,0%,.7);
+    display: block;
+    padding: 15px 50px;
+   
+}
+.lista a:hover{
+    background-color: #d01345;
+    color: #fff;
+}
+
+
+
+
+/*------------------------*/
+
+.container{
+    margin: auto;
+    margin-top: 20px;
+    /* border: 3px solid black; */
+}
+.col-md-, .col-lg-4{
+    margin-bottom: 20px;
+}
+.sty{
+    font-size: 18px !important;
+    color: black !important;
+}
+.num{
+    width: 80px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+.uk-border-circle{
+    width: 100px !important;
+    height: 100px !important;
+}
+.fa-cart-arrow-down{
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.fa-fedex{
+    color: white;
+    font-size: 100px;
+    padding-left: 50px;
+}
+.image-main {
+	font-size: 16px;
+	min-height: 49.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../images/men3.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 2.12em;
+	display: flex;
+	align-items: end;
+}
+
+/*--------------------------------------------
+------------------------------------------------
+----------------------------------------------*/
+.img-thumbnail {
+    transition: 0.3s;
+  }
+  
+  .img-thumbnail:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  
+  .img-thumbnail:active {
+    cursor: pointer;
+    transform: scale(0.95);
+  }
+  .et-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-dark{
+    width: 100%;
+}
