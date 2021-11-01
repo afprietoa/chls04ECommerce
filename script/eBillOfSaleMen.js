@@ -12,8 +12,8 @@ let totP = document.querySelector(".cartTotal");
 let cantP = document.querySelector(".cantP");
 
 
-const itemsPaypal = document.getElementById('itemsPaypal')
-const templateCarrito = document.getElementById('templatePaypal').content
+const itemsstore = document.getElementById('itemsstore')
+const templateCarrito = document.getElementById('templatestore').content
 const fragment = document.createDocumentFragment()
 
 const getLocalStorage = () => {
@@ -55,15 +55,15 @@ const pintarCarrito = () => {
   let carrito = JSON.parse(localStorage.getItem("carritoHombre"));
 
   Object.values(carrito).forEach(producto => {
-      templateCarrito.querySelector('.paypal__index').textContent = producto.id
-      templateCarrito.querySelector('.paypal__item-name').textContent = producto.name
-      templateCarrito.querySelector('.paypal__item-price').textContent =  '$' + producto.precio
+      templateCarrito.querySelector('.store__index').textContent = producto.id
+      templateCarrito.querySelector('.store__item-name').textContent = producto.name
+      templateCarrito.querySelector('.store__item-price').textContent =  '$' + producto.precio
 
       
       const clone = templateCarrito.cloneNode(true)
       fragment.appendChild(clone)
   })
-  itemsPaypal.appendChild(fragment)
+  itemsstore.appendChild(fragment)
   
 }
 
@@ -72,7 +72,7 @@ const pintarCarrito = () => {
 
 
 function startTime() {
-  //declaramos las  variables que nos proporcionaran los datos como la hora, minutos etc.
+
 
   let today = new Date(),
       hours = today.getHours(),
@@ -81,23 +81,22 @@ function startTime() {
       day = today.getDay(),
       month = today.getMonth();
 
-  //utilizaremos operadores ternarios esto nos ayudara a mostrar la hora solo del 1 al 12
+
   hours = (hours == 0) ? 12 : hours;
   hours = (hours > 12) ? hours - 12 : hours;
 
-  //pasaremos las horas y minutos a una funcion que crearemos mas adelante
+
   hours = checkTime(hours);
   minutes = checkTime(minutes);
 
-  //primero para los dias y meses crearemos un arreglo esto por que la funcion que nos debuelve
-  //los dias y meses nos los debuelbe en numero
+ 
   let dia = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       mes = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  //haora solo imprimimos los datos
+
     hr.textContent = hours + ":" + minutes,
       dt.textContent = dia[day] + ", " + date + " de " + mes[month];
 
-  //esta funcion hara que nuestro escript se ejecute constantemente
+
   let time = setTimeout(function() {
       startTime();
   }, 500);
@@ -106,8 +105,7 @@ function startTime() {
 
 
 }
-        //solo falta crear la funcion que nos diga si tine uno o dos dijitos
-        //esto para que si solo tiene uno le agrege u  cero a la izquierda
+
         function checkTime(e) {
           if (e < 10) {
               e = "0" + e;
